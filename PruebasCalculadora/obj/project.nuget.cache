@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "81BZymZV6xI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\airam\\Downloads\\PruebasCalculadora\\PruebasCalculadora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\airam\\.nuget\\packages\\selenium.support\\4.27.0\\selenium.support.4.27.0.nupkg.sha512",
+    "C:\\Users\\airam\\.nuget\\packages\\selenium.webdriver\\4.27.0\\selenium.webdriver.4.27.0.nupkg.sha512",
+    "C:\\Users\\airam\\.nuget\\packages\\selenium.webdriver.chromedriver\\131.0.6778.8500\\selenium.webdriver.chromedriver.131.0.6778.8500.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <input id="num1" type="number" placeholder="Número 1">
+    <input id="num2" type="number" placeholder="Número 2">
+    <br><br>
+    <button id="btnSumar">Sumar</button>
+    <button id="btnRestar">Restar</button>
+    <button id="btnMultiplicar">Multiplicar</button>
+    <button id="btnDividir">Dividir</button>
+    <p id="resultado">Resultado: </p>
+
+    <script>
+        const calcular = (operacion) => {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let resultado;
+            switch (operacion) {
+                case 'sumar': resultado = num1 + num2; break;
+                case 'restar': resultado = num1 - num2; break;
+                case 'multiplicar': resultado = num1 * num2; break;
+                case 'dividir': resultado = num1 / num2; break;
+                default: resultado = 'Operación no válida';
+            }
+            document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
+        };
+
+        document.getElementById('btnSumar').onclick = () => calcular('sumar');
+        document.getElementById('btnRestar').onclick = () => calcular('restar');
+        document.getElementById('btnMultiplicar').onclick = () => calcular('multiplicar');
+        document.getElementById('btnDividir').onclick = () => calcular('dividir');
+    </script>
+</body>
+</html>
